@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL Foreign Key
+        </h1>
+        <p>The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.
+        </p>
+        <p>A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table.
+        </p>
+        <p>The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table.
+        </p>
+        <h2>Syntax</h2>
+        <b>[CONSTRAINT constraint_name]  
+            FOREIGN KEY [foreign_key_name] (col_name, ...)  
+            REFERENCES parent_tbl_name (col_name,...)  
+        </b>
+        <h2>Example</h2>
+        <b>create table table2(roll int,status varchar(10),constraint fk_roll foreign key(roll) references table1(roll));</b>
+        <br><br><br><img src="../MYSQL/screenshot/foreign.png" alt="">
+        <br><br><br><img src="../MYSQL/screenshot/foreign1.png" alt="">
+    </body>
+</html>

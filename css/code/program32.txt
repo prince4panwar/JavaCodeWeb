@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+.inline{
+    display: inline;
+    color: deeppink;
+}
+.inline-block{
+    display: inline-block;
+    color: deeppink;
+}
+.block{
+display: block;
+color: deeppink;
+}
+div{
+    margin: 10px;
+    
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Display inline</h1>
+            <div>This is a <p class="inline">paragraph</p>  .......
+            </div>
+        </div>
+        <div>
+            <h1>Display inline-block</h1>
+            <div>This is a <p class="inline">paragraph</p>  .......
+            </div>
+        </div>
+        <div>
+            <h1>Display block</h1>
+            <div>This is a <p class="inline">paragraph</p>  .......
+            </div>
+        </div>
+
+    </body>
+</html>

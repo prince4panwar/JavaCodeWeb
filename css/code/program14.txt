@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        p{
+padding:20px;
+margin:10px;
+        }
+        .color{
+            color:red;
+        }
+        .size{
+            font-size: 30px;
+        }
+        </style>
+    </head>
+    <body>
+      <p><span class="size">1,049.61</span><sub style="color:rgb(131, 131, 131); font-size: 30px;">   USD   </sub><br>
+        +18.05(1.75%)today<br>
+        After hours 1,048.00<span class="color">-1.61(0.15%)</span></p>
+    </body>
+</html>

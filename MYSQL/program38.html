@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL JOINS
+        </h1>
+        <p>MySQL JOINS are used with SELECT statement. It is used to retrieve data from multiple tables. It is performed whenever you need to fetch records from two or more tables.
+        </p>
+        <ul>
+            <li>MySQL INNER JOIN (or sometimes called simple join)
+            </li>
+            <li>MySQL LEFT OUTER JOIN (or sometimes called LEFT JOIN)
+            </li>
+            <li>MySQL RIGHT OUTER JOIN (or sometimes called RIGHT JOIN)
+            </li>
+        </ul>
+        <h2>MySQL Inner JOIN (Simple Join)
+        </h2>
+        <p>The MySQL INNER JOIN is used to return all rows from multiple tables where the join condition is satisfied. It is the most common type of join.
+        </p>
+        <br><br><br><img src="../images/inner.png" alt="">
+        <h2>Syntax</h2>
+        <b>SELECT columns  
+            FROM student   
+            INNER JOIN attendence  
+            ON student.column = attendence.column;  
+            </b>
+           <br><br><br> <img src="../MYSQL/screenshot/null.png" alt="">
+           <br><br><br><img src="../MYSQL/screenshot/inner.png" alt="">
+            <h2>Example</h2>
+            <b>SELECT name,status from student inner join attendence on student.roll=attendence.roll;   
+                </b>
+                <br><br><br><img src="../MYSQL/screenshot/innerjoin.png" alt="">
+    </body>
+</html>

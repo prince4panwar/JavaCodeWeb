@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Reduction of ER diagram to Table
+        </h1>
+        <p>The database can be represented using the notations, and these notations can be reduced to a collection of tables.
+        </p>
+        <p>In the database, every entity set or relationship set can be represented in tabular form.
+        </p>
+        <b>The ER diagram is given below:
+        </b>
+       <br><br> <img src="../images/abb.png" alt="">
+       <p>There are some points for converting the ER diagram to the table:
+    </p>
+    <b>Entity type becomes a table.
+    </b>
+    <p>In the given ER diagram, LECTURE, STUDENT, SUBJECT and COURSE forms individual tables.
+    </p>
+    <b>All single-valued attribute becomes a column for the table.
+    </b>
+    <p>In the STUDENT entity, STUDENT_NAME and STUDENT_ID form the column of STUDENT table. Similarly, COURSE_NAME and COURSE_ID form the column of COURSE table and so on.
+    </p>
+    <b>A key attribute of the entity type represented by the primary key.
+    </b>
+    <p>In the given ER diagram, COURSE_ID, STUDENT_ID, SUBJECT_ID, and LECTURE_ID are the key attribute of the entity.
+    </p>
+    <b>The multivalued attribute is represented by a separate table.
+    </b>
+    <p>In the student table, a hobby is a multivalued attribute. So it is not possible to represent multiple values in a single column of STUDENT table. Hence we create a table STUD_HOBBY with column name STUDENT_ID and HOBBY. Using both the column, we create a composite key.
+    </p>
+    <b>Composite attribute represented by components.
+    </b>
+    <p>In the given ER diagram, student address is a composite attribute. It contains CITY, PIN, DOOR#, STREET, and STATE. In the STUDENT table, these attributes can merge as an individual column.
+    </p>
+    <b>Derived attributes are not considered in the table.
+    </b>
+    <p>In the STUDENT table, Age is the derived attribute. It can be calculated at any point of time by calculating the difference between current date and Date of Birth.
+    </p>
+    <p>Using these rules, you can convert the ER diagram to tables and columns and assign the mapping between the tables. Table structure for the given ER diagram is as below:
+    </p>
+   <br><br> <img src="../images/tB.PNG" alt="">
+    </body>
+</html>

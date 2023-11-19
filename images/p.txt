@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Example of BR tag
+</title>
+</head>  
+<body>  
+<p>If you want to break a line <br> in a paragraph, <br> use the BR element in <br> your HTML document. </p>  
+</body>
+</html>  
+
+ 

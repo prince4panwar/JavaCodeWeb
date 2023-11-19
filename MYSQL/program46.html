@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL UNIQUE Constraint
+        </h1>
+        <p>The UNIQUE constraint ensures that all values in a column are different.
+
+            Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns.
+            
+            A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+            
+            However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.
+            
+            </p>
+            <h2>Syntax
+            </h2>
+            <b>CREATE TABLE table_name(  
+                col1 datatype,  
+                col2 datatype UNIQUE,  
+                ...  
+            );  </b>
+            <h2>Example</h2>
+            <b>create table table2(roll int unique,name varchar(15),age int);</b>
+            <br><br><br><img src="../MYSQL/screenshot/unique.png" alt="">
+            <br><br><br><img src="../MYSQL/screenshot/unique1.png" alt="">
+    </body>
+</html>

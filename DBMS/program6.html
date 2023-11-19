@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>DBMS Architecture
+        </h1>
+        <ul type="circle">
+            <li>The DBMS design depends upon its architecture. The basic client/server architecture is used to deal with a large number of PCs, web servers, database servers and other components that are connected with networks.
+            </li>
+            <li>The client/server architecture consists of many PCs and a workstation which are connected via the network.
+            </li>
+            <li>DBMS architecture depends upon how users are connected to the database to get their request done.
+            </li>
+        </ul>
+        <p>This architecture contains three layers of database management system, which are as follows −
+        </p>
+        <ul type="square">
+            <li>External level
+            </li>
+            <li>Conceptual level
+            </li>
+            <li>Internal level
+            </li>
+        </ul>
+        <img src="../images/data1.png" alt="">
+        <h1>External View</h1> External level is the highest level view. It is the closest interface to the user. With the help of GUI interface interact with the system without knowing which type of data stored and how the data stored in the database. User, group of users and unique user(DBA) deal with a view, to communicate with the database.
+        <h1>Conceptual Level</h1> The Conceptual view is also known as a Logical level view. This level explains entire database.It hides all physical data storage detail from the user and focuses on relations, datatype, operations, and constraints. Database programmer and Database administrator work at this level for creating functions, triggers, procedure, relations in the table.
+       <h1>Internal Level</h1> Internal level is the last level among three level. It is also known as physical view level. It deals with data storage structure (B+ trees, Hash-table) and data access way to access the data in the least time from the database. B+ trees, Hash-table data structure, is used for storing data and Index table, primary key and foreign key constraints used for quick access or redundancy-free data. The user does not interact with this level.Primary key describes internal level, foreign key and index to access the data in the least time. This level is written in DDL language.
+
+
+
+    </body>
+</html>

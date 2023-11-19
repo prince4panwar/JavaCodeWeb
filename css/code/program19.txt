@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            
+            .container{
+                background-color:blue;
+                width: 500px;
+                height: 350px;
+            margin: 15px;
+            }
+            p{
+                color: white;
+                padding-top: 20px;
+                margin-left: 10px;
+                font-size: 20px;
+                
+            }
+            h1{
+                color: white;
+                margin-left: 10px;
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+            }
+            .box{
+                border-radius: 50%;
+                border: 2px solid white;
+                height: 50px;
+                width: 60px;
+                        }
+            .box p{
+                text-align: center;
+                font-size: 30px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>Projects-Branding</p>
+            <h1>Make IT Live</h1>
+            <p>-Lorem ipsum, dolor sit amet consectetur<br>adipsicing elit. Consequuntur perferendis, alias<br>quibusdam ratione ea cum id <i>laudantium accusantium tempore, numquam dicta, tenetur <br>ipsam!</i></p>
+            <div class="box">
+                <p >$37</p>
+            </div>
+        </div>
+    </body>
+</html>

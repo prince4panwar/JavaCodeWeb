@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>
+            MySQL Aggregate Functions
+
+        </h1>
+        <p>MySQL's aggregate function is used to perform calculations on multiple values and return the result in a single value like the average of all values, the sum of all values, and maximum & minimum value among certain groups of values. We mostly use the aggregate functions with SELECT statements in the data query languages.</p>
+        <b>
+        Various Aggregate Functions</b>
+        <ul>
+            <li>Count()</li>
+            <li>Sum()</li>
+            <li> Avg()</li>
+            <li> Min()</li>
+            <li>Max()</li>
+        </ul>
+        <table border="1">
+            <tr>
+                <th>Id </th>
+                <th>Name     </th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>A</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>D</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>E</td>
+                <td>NULL</td>
+            </tr>
+        </table>
+        <br><br>
+        <b>Count():
+        </b>
+        <p>Count(*): Returns total number of records .i.e 6.
+        </p>
+        <p>Count(salary): Return number of Non Null values over the column salary. i.e 5.
+        </p>
+        <p>Count(Distinct Salary):  Return number of distinct Non Null values over the column salary .i.e 4
+        </p>
+        <b>Sum():
+        </b>
+        <p>sum(salary):  Sum all Non Null values of Column salary i.e., 310
+        </p>
+        <p>sum(Distinct salary): Sum of all distinct Non-Null values i.e., 250.
+        </p>
+        <b>Avg():
+        </b>
+        <p>Avg(salary) = Sum(salary) / count(salary) = 310/5
+        </p>
+        <p>Avg(Distinct salary) = sum(Distinct salary) / Count(Distinct Salary) = 250/4
+        </p>
+        <b>Min():
+        </b>
+        <p>Min(salary): Minimum value in the salary column except NULL i.e., 40.
+        </p>
+        <b>Max():
+        </b>
+        <p>Max(salary): Maximum value in the salary i.e., 80.
+        </p>
+
+
+    </body>
+</html>

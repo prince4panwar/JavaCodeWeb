@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Relational Model in DBMS
+        </h1>
+        <p>The relational Model was proposed by E.F. Codd to model data in the form of relations or tables. After designing the conceptual model of the Database using ER diagram, we need to convert the conceptual model into a relational model which can be implemented using any RDBMS language like Oracle SQL, MySQL, etc. So we will see what the Relational Model is.
+        </p>
+        <p>The relational model represents how data is stored in Relational Databases.  A relational database stores data in the form of relations (tables). Consider a relation STUDENT with attributes ROLL_NO, NAME, ADDRESS, PHONE, and AGE shown in Table 1. 
+        </p>
+        <P><B> Domain:</B> It contains a set of atomic values that an attribute can take.
+</P>
+<p><b>Attribute:</b> It contains the name of a column in a particular table. Each attribute Ai must have a domain, dom(Ai)
+</p>
+<p><b>Relational instance:</b> In the relational database system, the relational instance is represented by a finite set of tuples. Relation instances do not have duplicate tuples.
+</p>
+<p><b>Relational schema:</b> A relational schema contains the name of the relation and name of all columns or attributes.
+</p>
+<p><b>Relational key:</b> In the relational key, each row has one or more attributes. It can identify the row in the relation uniquely.
+</p>
+        <br>
+        <b>STUDENT 
+        </b>
+        <table>
+            <tr>
+                <th>ROLL_NO	</th>
+                <th>NAME	</th>
+                <th>ADDRESS</th>
+                <th>PHONE</th>
+                <th>AGE
+                </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>NEHA</td>
+                <td>DELHI</td>
+                <td>9455123451	</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>RAHUL</td>
+                <td>GURGAON	</td>
+                <td>9652431543</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SUJIT</td>
+                <td>ROHTAK</td>
+                <td>9156253131</td>
+                <td>20</td>
+            </tr>
+        </table>
+        <ul>
+            <li>In the given table, NAME, ROLL_NO, PHONE_NO, ADDRESS, and AGE are the attributes.
+            </li>
+            <li>The instance of schema STUDENT has 3 tuples.
+            </li>
+                    </ul>
+        <h3>Properties of Relations
+        </h3>
+        <ul >
+            <li>Name of the relation is distinct from all other relations.
+            </li>
+            <li>Each relation cell contains exactly one atomic (single) value
+            </li>
+            <li>Each attribute contains a distinct name
+            </li>
+            <li>Attribute domain has no significance
+            </li>
+            <li>tuple has no duplicate value
+            </li>
+            <li>Order of tuple can have a different sequence
+            </li>
+        </ul>
+    </body>
+</html>

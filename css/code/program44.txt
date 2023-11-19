@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            *{
+                padding: 10px;
+                
+            }
+div{
+    margin: 10px;
+    border: 2px solid rgb(52, 52, 107);
+    border-radius: 40px;
+    background-color:rgb(52, 52, 107) ;
+    width: 15%;
+    padding-right: 0px;
+    margin-left: 10px;
+    p
+    
+
+}
+a{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;  
+}
+        </style>
+    </head>
+    <body>
+        <div >
+            <a href="#" >TWEET</a>
+        </div>
+    </body>
+</html>

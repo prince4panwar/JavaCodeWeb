@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL Constants
+        </h1>
+        <p>A constant is a value used in a PL/SQL block that remains unchanged throughout the program. It is a user-defined literal value. It can be declared and used instead of actual values.
+        </p>
+        <h2>Syntax </h2>
+        <b>constant_name CONSTANT datatype := VALUE;  
+        </b>
+        <h2>Example </h2>
+        <br><b>DECLARE
+        <br>
+            school constant varchar2(20) := 'College';
+       <br>BEGIN <br>
+            dbms_output.put_line('I study in '|| school);
+       <br> END;</b>
+        <br><br><br><img src="../PLSQL/screenshot/constaint.png" alt="">
+    </body>
+</html>

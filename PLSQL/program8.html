@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL If
+        </h1>
+        <p>PL/SQL supports the programming language features like conditional statements and iterative statements. Its programming constructs are similar to how you use in programming languages like Java and C++.
+        </p>
+        <h2>Syntax</h2>
+       <br> <b>IF condition   
+           <br> THEN   
+          <br>  Statement: {It is executed when condition is true}  
+         <br>   END IF;  
+            </b>
+            <h2>Example </h2>
+            <b>declare
+               <br> A number;
+               <br> b number;
+                <br>
+                begin
+               <br> A:=10;
+               <br> B:=5;
+               <br> if A>B then
+               <br> dbms_output.put_line('A is bigger than B');
+                <br>end if;
+                <br>end;
+               <br> /</b>
+                <br><br><br><img src="../PLSQL/screenshot/if.png" alt="">
+                <br><br>
+                <h2>(IF-THEN-ELSE-END IF)</h2>
+                <h2>Syntax</h2>
+                <br><b>IF condition   
+                  <br>  THEN  
+                       <br>{...statements to execute when condition is TRUE...}  
+                  <br>  ELSE  
+                      <br> {...statements to execute when condition is FALSE...}  
+                   <br> END IF;   
+                    </b>
+                    <h2>Example</h2>
+                   <br> <b>declare
+                       <br> A number;
+                       <br> b number;
+                      <br>  begin
+                      <br>  A:=22;
+                       <br> B:=33;
+                       <br> if A>B then
+                       <br> dbms_output.put_line('A is bigger than B');
+                        <br>else
+                           <br> dbms_output.put_line('B is bigger than A');
+                      <br>  end if;
+                      <br>  end;
+                       <br> /</b>
+                        <br><br><br><img src="../PLSQL/screenshot/ifelse.png" alt="">
+                        <br><br>
+                        <h2>IF-THEN-ELSIF-END IF</h2>
+                        <h2>Syntax</h2>
+                        <b>IF condition1   
+                           <br> THEN  
+                              <br> {...statements to execute when condition1 is TRUE...}  
+                         <br>   ELSIF condition2   
+                         <br>   THEN  
+                         <br>      {...statements to execute when condition2 is TRUE...}  
+                       <br>  ELSE
+                       <br>  {Statements}
+                        <br>    END IF;  </b>
+                        <h2>Example</h2>
+                        <b>declare
+                    <br>
+                         <br>   A number;
+                         <br>   B number;
+                          <br>  C number;
+                          <br>  begin
+                         <br>   A:=10;
+                        <br>    B:=20;
+                         <br>   C:=30;
+                          <br>  if A>B then
+                          <br>      if A>C then
+                         <br>   dbms_output.put_line(A || 'is biggest');
+                        <br>    else
+                          <br>      dbms_output.put_line(C|| 'is biggest');
+                          <br>  end if;
+                          <br>  elsif B>C then
+                             <br>   dbms_output.put_line(B||'is biggest');
+                         <br>   else
+                          <br>      dbms_output.put_line(C||' is biggest');
+                        <br>    end if;
+                        <br>    end;
+                         <br>   /
+                            
+                        </b>
+                            <br><br><br><img src="../PLSQL/screenshot/ifelseif.png" alt="">
+    </body>
+</html>

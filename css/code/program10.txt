@@ -1,0 +1,9 @@
+<html>
+<head>
+    </head>
+    <body>
+      <div style="background-color:rgb(150, 16, 16);color:white; width:50% ;padding:10px;margin-left:5px; margin-top: 50px;">
+      <p>Shop early for the best selection of holiday favourites. Shop Now ></p>
+</div> 
+    </body>
+</html>

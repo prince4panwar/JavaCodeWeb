@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL Continue Statement
+        </h1>
+        <p>The continue statement is used to exit the loop from the reminder if its body either conditionally or unconditionally and forces the next iteration of the loop to take place, skipping any codes in between.
+
+        </p>
+        <h2>Syntax
+        </h2>
+        <b>continue;  
+        </b>
+        <h2>Example</h2>
+        <b>DECLARE 
+           <br> a number(2) := 15; 
+        <br> BEGIN 
+          <br>  WHILE a < 20 LOOP 
+            <br>   dbms_output.put_line ('value of a: ' || a); 
+            <br>   a := a + 1; 
+             <br>  IF a = 15 THEN 
+               <br>   a := a + 1; 
+              <br>    CONTINUE; 
+             <br>  END IF; 
+          <br>  END LOOP; 
+       <br>  END; 
+      <br>   / </b>
+         <br><br><br><img src="../PLSQL/screenshot/continue.png" alt="">
+    </body>
+</html>

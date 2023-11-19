@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Keys
+        </h1>
+        <p>Keys play an important role in the relational database.
+        </p>
+        <p>It is used to uniquely identify any record or row of data from the table. It is also used to establish and identify relationships between tables.
+        </p>
+        <p>For example, ID is used as a key in the Student table because it is unique for each student. In the PERSON table, passport_number, license_number, SSN are keys since they are unique for each person.
+        </p>
+        <br><br><img src="../images/key1.png" alt="">
+        <h3>Types of keys
+        </h3>
+        <b>1. Primary key
+        </b>
+        <p>It is the first key used to identify one and only one instance of an entity uniquely. An entity can contain multiple keys, as we saw in the PERSON table. The key which is most suitable from those lists becomes a primary key.
+        </p>
+        <p>In the EMPLOYEE table, ID can be the primary key since it is unique for each employee. In the EMPLOYEE table, we can even select License_Number and Passport_Number as primary keys since they are also unique.
+        </p>
+        <p>For each entity, the primary key selection is based on requirements and developers.
+        </p>
+        <br><br><img src="../images/keys.png" alt=""><br><br>
+        <b>4. Foreign key
+        </b>
+        <p>Foreign keys are the column of the table used to point to the primary key of another table.
+        </p>
+        <p>Every employee works in a specific department in a company, and employee and department are two different entities. So we can't store the department's information in the employee table. That's why we link these two tables through the primary key of one table.
+        </p>
+        <p>We add the primary key of the DEPARTMENT table, Department_Id, as a new attribute in the EMPLOYEE table.
+        </p>
+        <p>In the EMPLOYEE table, Department_Id is the foreign key, and both the tables are related.
+        </p>
+        <br><br><img src="../images/foreign.png" alt="">
+        
+
+    </body>
+</html>

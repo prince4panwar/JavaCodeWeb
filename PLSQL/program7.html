@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL Datatypes</h1>
+        <p>Data Types in PL/SQL are used to define how the data will be stored, handled, and treated by Oracle during the data storage and processing. Data types are associated with the specific storage format and range constraints. In Oracle, each value or constant is assigned with a data type.
+        </p>
+        <br><br><br><img src="../PLSQL/screenshot/PLSQL-Datatypes.webp" alt="">
+        <br><br>
+        <ul>
+            <li><b>Scalar Types:</b> These are basic datatypes which generally holds a single value like a number or a string of characters. Scalar types have 4 different categories which are listed in the diagram above, namely Number Types, Character and String, Boolean Types and Date and Time etc.
+            </li>
+            <li><b>LOB Types:</b> This datatype deals with large objects and is used to specify location of these large objects like text files, images etc which are generally not stored outside the database.
+            </li>
+            <li><b>Reference Types:</b> This datatype is used to hold pointer values which generally stores address of other program items.
+            </li>
+            <li><b>Composite Types:</b> Last but not the least, as the name suggests this type of data is a composition of individual data which can be manipulated/processed separatel as well.
+            </li>
+        </ul>
+        <h2>NUMBER(p,s)
+        </h2>
+        <b>Range: p= 1 to 38 s= -84 to 127</b>
+        <p>This datatype is used to store numeric data. Here, p is precision s is scale.
+        </p>
+        <h2>CHAR(size)
+        </h2>
+        <b>Range:1 to 2000 bytes</b>
+        <p>This datatype is used to store alphabetical string of fixed length.
+        </p>
+        <p>Its value is quoted in single quotes.
+        </p>
+        <h2>VARCHAR(size)
+        </h2>
+        <b>Range: 1 to 2000 bytes</b>
+        <p>This datatype is used to store alphanumeric string of variable length.
+        </p>
+        <p>Its value is quoted in single quotes.
+        </p>
+        <h2>VARCHAR2(size)
+        </h2>
+        <b>Range:1 to 4000 bytes</b>
+        <p>This datatype is used to store alphanumeric string of variable length.
+        </p>
+        <p>Its value is quoted in single quotes.
+        </p>
+        <h2>DATE
+        </h2>
+        <b>Range:01-Jan-4712 BC to 31-DEC-9999</b>
+        <p>It stores the data in date format DD-MON-YYYY
+        </p>
+        <p>The value for this datatype is written in single quotes.
+        </p>
+        <h2>BOOLEAN
+        </h2>
+        <p>This datatype is used in conditional statements.
+        </p>
+        <p>It stores logical values.
+        </p>
+        <p>It can be either TRUE or FALSE
+        </p>
+    </body>
+</html>

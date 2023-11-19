@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+.first{
+    border: 3px green solid;
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+}
+.second{
+    border: 3px green solid;
+    height: 100px;
+    width: 200px;
+    padding-left: 30px;
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    top: 170px;
+    left: 290px;
+}
+h1{
+    font-size: 30px;
+}
+  p{
+      font-size: 20px;
+  }      </style>
+    </head>
+    <body>
+        <h1>position:absolute;</h1>
+        <p>An element with postion:absolute; is positioned relative to the nearest positioned ancestor (insted of positioned relative to the viewport, like fixed):</p>
+        <div class="first">
+            <p>This div element has position:relative;</p>
+        <div class="second">
+            <p>This div element has position:absolute;</p>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>PL/SQL Cursor
+        </h1>
+        <p>When an SQL statement is processed, Oracle creates a memory area known as context area. A cursor is a pointer to this context area. It contains all information needed for processing the statement. In PL/SQL, the context area is controlled by Cursor. A cursor contains information on a select statement and the rows of data accessed by it.
+        </p>
+        <h2>There are two types of cursors</h2>
+        <ul>
+            <li>Implicit Cursors
+            </li>
+            <li>Explicit Cursors
+            </li>
+        </ul>
+        <h2>1) PL/SQL Implicit Cursors
+        </h2>
+        <p>If the Oracle engine opened a cursor for its internal processing it is known as an Implicit Cursor. It is created “automatically” for the user by Oracle when a query is executed and is simpler to code.</p>
+        <h2>Attribute of Implicit Cursor</h2>
+        <br><br><br><img src="../PLSQL/screenshot/cursor.png" alt="">
+        <h2>Syntax</h2>
+        <b>CURSOR cursor_name IS query;
+        </b>
+       <br> <h2>Table emp:-</h2>
+        <br><br><br><img src="../PLSQL/screenshot/implicit1.png" alt="">
+        <h2>Example</h2>
+      <br>  <b>DECLARE   
+        <br>    var_rows number(3);  
+      <br>   BEGIN  
+         <br>   UPDATE  emp 
+         <br>   SET salary = salary + 6000;  
+          <br>  IF sql%notfound THEN  
+          <br>     dbms_output.put_line('none of the salaries were updated');  
+         <br>   ELSIF sql%found THEN  
+          <br>     var_rows := sql%rowcount;  
+          <br>     dbms_output.put_line( var_rows || ' records are updated ');  
+          <br>  END IF;   
+       <br>  END;  
+       <br>  /  
+         </b>
+         <br><br><br><img src="../PLSQL/screenshot/implicit.png" alt="">
+         <h2>2) PL/SQL Explicit Cursors
+        </h2>
+        <p>A Cursor can also be opened for processing data through a PL/SQL block, on demand. Such a user-defined cursor is known as an Explicit Cursor.
+        </p>
+        <h2>Syntax</h2>
+       <br> <b>CURSOR cursor_name IS select_statement;
+           <br> cursor_name – A suitable name for the cursor.
+          <br>  select_statement – A select query which returns multiple rows</b>
+           <br><br><br> <b>How to use Explicit Cursor?
+            </b>
+            <ol>
+                <li>DECLARE the cursor in the Declaration section.
+                </li>
+                <li>OPEN the cursor in the Execution Section.
+                </li>
+                <li>FETCH the data from the cursor into PL/SQL variables or records in the Execution Section.
+                </li>
+                <li>CLOSE the cursor in the Execution Section before you end the PL/SQL Block.
+                </li>
+            </ol>
+            <h2>Syntax:
+            </h2>
+            <br><b>DECLARE variables;
+              <br>  records;
+              <br>  create a cursor;
+             <br>   BEGIN 
+              <br> OPEN cursor; 
+             <br>  FETCH cursor;
+              <br>  process the records;
+              <br>  CLOSE cursor; 
+              <br> END;</b>
+              <br> <h2>Table emp:-</h2>
+              <br><br><img src="../PLSQL/screenshot/implicit1.png" alt="">
+              <h2>Example</h2>
+              <b>DECLARE  
+              <br>  id emp.id%type;  
+               <br> name emp.name%type;  
+               <br> CURSOR c_emp is  
+               <br>    SELECT id, name FROM emp;  
+          <br>   BEGIN  
+           <br>     OPEN c_emp;  
+           <br>     LOOP  
+             <br>      FETCH c_emp into id, name;  
+               <br>    EXIT WHEN c_emp%notfound;  
+             <br>      dbms_output.put_line(id || ' ' || name || ' ' );  
+             <br>   END LOOP;  
+             <br>   CLOSE c_emp;  
+          <br>   END;  
+          <br>   /  </b>
+             <br><br><br><img src="../PLSQL/screenshot/explicit.png" alt="">
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 style="font-family:sans-serif ; margin-left:5px;margin-top:30px;font-size: 30px;">HTML CSS Course</h1>
+        <p style="color:rgb(131, 131, 131);font-family: sans-serif;margin-left:5px;">Beginner to Pro<br><br>
+<br>In this course, we'll learn the skills <br>you need to become a developer.</p>
+        <input type="button" value="Get Started" style="background-color:green; color: white; width: 110px; height: 40px; margin-left: 5px; border:0px;">
+    </body>
+</html>

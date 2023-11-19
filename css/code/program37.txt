@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+            }
+p{
+    font-size: 20px;
+    padding: 20px;
+}
+.header{
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(240, 233, 233);
+}
+.row{
+    padding: 20px;
+}
+.links{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px;
+}
+a:hover{
+    background-color: rgb(185, 179, 179)
+}
+.row{
+    flex-direction: column;
+}
+.first{
+    flex: 20%;
+}
+.second{
+    flex: 60%;
+}
+.third{
+    flex: 20%;
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+            <p>Resize the browser windows to see the responsive effect.</p>
+        </div>
+        <div class="links">
+            <a href="">Links</a>
+            <a href="">Links</a>
+            <a href="">Links</a>
+        </div>
+        <div class="row">
+            <div class="first">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet,consectetr adipiscing elit..</p>
+            </div>
+            <div class="second">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.Maecenas sit amet pretium urna.vivamus venenatis velit nec neque ultricies,eget elementum magna tristique.Quisque vechicula, risus eget aliquam placerat, purus leo tincidunt eros,eget luctus quam orci in velit.Paresent scelerisque tortor sed accumsan convallis.<br><br>
+                    Lorem ipsum dolor sit amet,consectetur adipiscing elit.Maecenas sit amet pretium urna.vivamus venenatis velit nec neque ultricies,eget elementum magna tristique.Quisque vechicula, risus eget aliquam placerat, purus leo tincidunt eros,eget luctus quam orci in velit.Paresent scelerisque tortor sed accumsan convallis.<br><br>
+                </p>
+            </div>
+            <div class="third">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet,consectetr adipiscing elit..</p>
+
+            </div>
+        </div>
+    </body>
+</html>

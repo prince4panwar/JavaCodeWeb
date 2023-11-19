@@ -1,0 +1,30 @@
+<html>
+<head>
+    <style>
+        nav{
+            display: inline-block;
+            margin-left: 25%;
+
+        }
+        .div1{
+        background-color:red;height:200px;width: 200px; margin: 5px;
+
+        }
+        .div2{
+            background-color:rgb(139, 21, 218);height:200px;width: 200px; margin:5px;
+
+        }
+        .div3{
+            background-color:rgb(233, 150, 122);height:200px;width: 200px;margin:5px;
+
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+        <nav class="div1"></nav>
+        <nav class="div2"></nav>
+        <nav class="div3"></nav>
+        </nav>
+    </body>
+</html>

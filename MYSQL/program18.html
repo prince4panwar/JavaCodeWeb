@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL Copy Table
+        </h1>
+        <p>MySQL copy or clone table is a feature that allows us to create a duplicate table of an existing table, including the table structure, indexes, constraints, default values, etc. Copying data of an existing table into a new table is very useful in a situation like backing up data in table failure. It is also advantageous when we need to test or perform something without affecting the original table, for example, replicating the production data for testing.
+        </p>
+        <h2>Syntax</h2>
+        <b>CREATE TABLE new_table_name
+            AS
+            SELECT 
+              * 
+            FROM old_table_name;
+                                                
+            </b>
+           <br><br><br> <img src="../MYSQL/screenshot/select1.png" alt="">
+            <h2>Example</h2>
+            <b>CREATE TABLE student
+                AS
+                SELECT 
+                  * 
+                FROM employee;                                
+                </b>
+                <br><br><br><img src="../MYSQL/screenshot/copy.png" alt="">
+               <br><br><br> <b>mysql>SHOW TABLES;  
+                </b>
+               <br><br><br> <img src="../MYSQL/screenshot/copy1.png" alt="">
+    </body>
+</html>

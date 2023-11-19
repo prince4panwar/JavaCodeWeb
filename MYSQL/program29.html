@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL HAVING Clause
+        </h1>
+        <p>MySQL HAVING Clause is used with GROUP BY clause. It always returns the rows where condition is TRUE.
+
+        </p>
+        <h2>Syntax</h2>
+        <b>SELECT column_name
+            FROM table_name
+            WHERE condition
+            GROUP BY column_name
+            HAVING condition
+            ORDER BY column_name;</b>
+            <h2>Example</h2>
+            <b>SELECT COUNT(*)
+                FROM student
+                GROUP BY Country
+                HAVING COUNT(*) > 2;
+                </b>
+                <br><br><br><img src="../MYSQL/screenshot/having1.png" alt="">
+
+    </body>
+</html>

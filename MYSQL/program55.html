@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Commit and Rollback in SQL
+        </h1>
+        <ul>
+            <li>Commit and rollback are the <b> transaction control commands </b>in SQL.
+            </li>
+            <li>If you want to save all the commands which are executed in a transaction, then just after completing the transaction, you have to execute the <b>commit</b> command. This command will save all the commands which are executed on a table. All these changes made to the table will be saved to the disk permanently.
+            </li>
+            <li>Whenever the commit command is executed in SQL, all the updations which we have carried on the table will be uploaded to the server, and hence our work will be saved.
+            </li>
+            <li>The <b>rollback</b> command is used to get back to the previous permanent status of the table, which is saved by the commit command.
+            </li>
+            
+        </ul>
+        <H2>Syntax</H2>
+        <b>COMMIT;
+        </b>
+        <br><br><br><img src="../MYSQL/screenshot/count1.png" alt="">
+        <h2>Example</h2>
+        <b>mysql> COMMIT;  
+        </b>
+        <br><br><br><img src="../MYSQL/screenshot/commit.png" alt="">
+        <p>Now, turn off the auto-commit by setting the value of auto-commit as 0.
+        </p>
+        <br>
+        <b>mysql> SET autocommit = 0;  
+        </b>
+        <br><br><br><img src="../MYSQL/screenshot/autocommit.png" alt="">
+       <br><br> <b>insert into student values(5,"joti",40);</b>
+        <br><br><br><img src="../MYSQL/screenshot/commit1.png" alt="">
+       <br><br> <b> select * from student;</b>
+        <br><br><br><img src="../MYSQL/screenshot/rollback.png" alt="">
+        <h2>Syntax</h2>
+        <b> ROLLBACK;  </b>
+        <h2>Example</h2>
+        <b>mysql> ROLLBACK;  
+        </b>
+        <br><br><br><img src="../MYSQL/screenshot/rollback1.png" alt="">
+       <br><br> <b>select * from student;</b>
+        <br><br><br><img src="../MYSQL/screenshot/roll2.png" alt="">
+    </body>
+</html>

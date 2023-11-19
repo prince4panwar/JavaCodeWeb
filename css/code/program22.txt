@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(../images/pro.jpeg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                
+            }
+        </style>
+    </head>
+    <body>
+ <h1>Fixed background</h1>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>                                                                                               
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br>
+<p>background of this document is fixed.<br> 
+    </p>                                                                                                                                     
+    </body>
+</html>

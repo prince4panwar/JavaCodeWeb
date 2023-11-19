@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL While Loop
+        </h1>
+        <p>PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, the While loop is used. The condition is decided at the beginning of each iteration and continues until the condition becomes false.
+
+        </p>
+        <h2>Syntax </h2>
+        <b>WHILE <condition>   
+           <br> LOOP statements;   
+        <br>   END LOOP;  </b>
+        <h2>Example </h2>
+        <b>DECLARE  
+         <br>   i INTEGER := 0;  
+          <br>  BEGIN  
+         <br>   WHILE i <= 10 LOOP  
+         <br>   DBMS_OUTPUT.PUT_LINE(i);  
+         <br>   i := i+1;  
+          <br>  END LOOP;  
+          <br>  END;  </b>
+            <br><br><br><img src="../PLSQL/screenshot/while.png" alt="">
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL Trigger</h1>
+        <p>Triggers are stored programs, which are automatically executed or fired when some events occur. Triggers are, in fact, written to be executed in response to any of the following events −</p>
+<p>A database manipulation (DML) statement (DELETE, INSERT, or UPDATE)
+</p>
+<p>A database definition (DDL) statement (CREATE, ALTER, or DROP).
+</p>
+<p>A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN).
+</p>
+<h2>Benefits of Triggers
+</h2>
+<ul>
+    <li>Generating some derived column values automatically
+    </li>
+    <li>Enforcing referential integrity
+    </li>
+    <li>Event logging and storing information on table access
+    </li>
+    <li>Auditing</li>
+    <li>Synchronous replication of tables
+    </li>
+    <li>Imposing security authorizations
+    </li>
+    <li>Preventing invalid transactions
+    </li>
+</ul>
+<h2>Creating Triggers
+</h2>
+<b>CREATE [OR REPLACE ] TRIGGER trigger_name  
+   <br> {BEFORE | AFTER | INSTEAD OF }  
+   <br> {INSERT [OR] | UPDATE [OR] | DELETE}  
+   <br> [OF col_name]  
+  <br>  ON table_name  
+   <br> [REFERENCING OLD AS o NEW AS n]  
+   <br> [FOR EACH ROW]  
+  <br>  WHEN (condition)   
+  <br>  DECLARE 
+  <br>     Declaration-statements 
+  <br>  BEGIN  
+    <br>   Executable-statements 
+   <br> EXCEPTION 
+   <br>    Exception-handling-statements 
+  <br>  END; </b>
+  <ul>
+    <li>CREATE [OR REPLACE] TRIGGER trigger_name − Creates or replaces an existing trigger with the trigger_name.
+    </li>
+    <li>{BEFORE | AFTER | INSTEAD OF} − This specifies when the trigger will be executed. The INSTEAD OF clause is used for creating trigger on a view.
+    </li>
+    <li>{INSERT [OR] | UPDATE [OR] | DELETE} − This specifies the DML operation.
+    </li>
+    <li>[OF col_name] − This specifies the column name that will be updated.
+    </li>
+    <li>[ON table_name] − This specifies the name of the table associated with the trigger.
+    </li>
+    <li>[REFERENCING OLD AS o NEW AS n] − This allows you to refer new and old values for various DML statements, such as INSERT, UPDATE, and DELETE.
+    </li>
+    <li>[FOR EACH ROW] − This specifies a row-level trigger, i.e., the trigger will be executed for each row being affected. Otherwise the trigger will execute just once when the SQL statement is executed, which is called a table level trigger.
+    </li>
+    <li>WHEN (condition) − This provides a condition for rows for which the trigger would fire. This clause is valid only for row-level triggers.
+    </li>
+
+  </ul>
+  <br><br><h2>Table emp:-</h2>
+  <br><br><br><img src="../PLSQL/screenshot/triggers.png" alt="">
+  <h2>Example</h2>
+ <br> <b>CREATE OR REPLACE TRIGGER display_salary_changes  
+   <br> BEFORE DELETE OR INSERT OR UPDATE ON emp 
+   <br> FOR EACH ROW  
+   <br> WHEN (NEW.ID > 0)  
+   <br> DECLARE  
+     <br>  salary_diff number;  
+   <br> BEGIN  
+     <br>  salary_diff := :NEW.salary  - :OLD.salary;  
+      <br> dbms_output.put_line('Old salary: ' || :OLD.salary);  
+     <br>  dbms_output.put_line('New salary: ' || :NEW.salary);  
+     <br>  dbms_output.put_line('Salary difference: ' || salary_diff);  
+   <br> END;  
+   <br> /  </b>
+    <br><br><br><img src="../PLSQL/screenshot/triggers1.png" alt="">
+    <h2>Example</h2>
+   <br> <b>DECLARE   
+    <br>  total_rows number(2);  
+  <br> BEGIN  
+    <br>  UPDATE  emp 
+    <br>  SET salary = salary + 4000;  
+     <br> IF sql%notfound THEN  
+       <br>  dbms_output.put_line('no employee updated');  
+     <br> ELSIF sql%found THEN  
+       <br>  total_rows := sql%rowcount;  
+       <br>  dbms_output.put_line( total_rows || ' employee updated ');  
+    <br>  END IF;   
+  <br> END;  
+  <br> /</b>
+  <br><br><br><img src="../PLSQL/screenshot/triggers6.png" alt="">
+   <br><br><br><img src="../PLSQL/screenshot/triggers5.png" alt="">
+  
+
+    </body>
+</html>

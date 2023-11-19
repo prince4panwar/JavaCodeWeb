@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL Variables
+        </h1>
+        <p>A variable is a meaningful name which facilitates a programmer to store data temporarily during the execution of code. It helps you to manipulate data in PL/SQL programs. It is nothing except a name given to a storage area. Each variable in the PL/SQL has a specific data type which defines the size and layout of the variable's memory.
+        </p>
+        <p>A variable should not exceed 30 characters. Its letter optionally followed by more letters, dollar signs, numerals, underscore etc.
+        </p>
+        <br><br><h2>Naming rules for PL/SQL variables
+        </h2>
+        <ul>
+            <li>The variable_name should not exceed 30 characters.
+            </li>
+            <li>Variable name should not be the same as the table table's column of that block.
+            </li>
+            <li>The name of the variable must begin with ASCII letter. The PL/SQL is not case sensitive so it could be either lowercase or uppercase. For example: v_data and V_DATA refer to the same variables.
+            </li>
+            <li>You should make your variable easy to read and understand, after the first character, it may be any number, underscore (_) or dollar sign ($).
+            </li>
+            <li>NOT NULL is an optional specification on the variable.
+            </li>
+        </ul>
+        <br><br>
+        <h2>Syntax </h2>
+        <b>variable_name [CONSTANT] datatype [NOT NULL] [:= | DEFAULT initial_value]  
+        </b>
+        <h2>Example</h2>
+        <br><br><b>DECLARE  
+           <br> a integer := 45;  
+        
+           <br> b integer := 40;  
+           <br> c integer;  
+           
+        <br><br> BEGIN  
+           <br> c := a + b;  
+           <br> dbms_output.put_line('Value of c: ' || c);  
+            
+        <br><br> END;  
+            </b>
+            <br><br><br><img src="../PLSQL/screenshot/var1.png" alt="">
+
+    </body>
+</html>

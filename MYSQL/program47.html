@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MYSQL CHECK Constraint
+        </h1>
+        <p>The CHECK constraint is used to limit the value range that can be placed in a column.
+        </p>
+        <p>If you define a CHECK constraint on a column it will allow only certain values for this column.
+        </p>
+        <p>If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.
+        </p>
+        <h2>Syntax</h2>
+        <b>CREATE TABLE table_name(  
+            col1 datatype,  
+            col2 datatype , 
+            CHECK (col3>=18)  
+            ...  
+        );
+    </b>
+    <h2>Example</h2>
+    <b>CREATE TABLE Persons (
+           ID int NOT NULL,
+        LastName varchar(255) NOT NULL,
+             FirstName varchar(255),
+             Age int,
+            CHECK (Age>=18)
+ );</b>
+ <br><br><br><img src="../MYSQL/screenshot/check.png" alt="">
+ <br><br><br><img src="../MYSQL/screenshot/check1.png" alt="">
+
+    </body>
+</html>

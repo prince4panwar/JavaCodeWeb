@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MYSQL NOT NULL Constraint
+        </h1>
+        <p>By default, a column can hold NULL values.
+
+            The NOT NULL constraint enforces a column to NOT accept NULL values.
+            
+            This enforces a field to always contain a value, which means that you cannot insert a new record, or update a record without adding a value to this field.
+            
+            </p>
+            <h2>Syntax</h2>
+            <b>CREATE TABLE table_name(  
+                col1 datatype,  
+                col2 datatype not null,
+                ...  
+            );  
+            </b>
+            <h2>Example</h2>
+            <b>create table table1(roll int,name varchar(15) not null,age int);</b>
+            <br><br><br><img src="../MYSQL/screenshot/notnull1.png" alt="">
+            <br><br><br><img src="../MYSQL/screenshot/notnull2.png" alt="">
+    </body>
+</html>

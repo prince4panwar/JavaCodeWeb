@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL CROSS JOIN
+        </h1>
+        <p>The CROSS JOIN keyword returns all records from both tables (table1 and table2).
+        </p>
+        <br><br><br><img src="../images/cross.png" alt="">
+        <h2>Syntax</h2>
+        <b>SELECT column_name(s)
+            FROM table1
+            CROSS JOIN table2;</b>
+            <br><br><br><img src="../MYSQL/screenshot/null.png" alt="">
+            <br><br><br><img src="../MYSQL/screenshot/inner.png" alt="">
+            <h2>Example</h2>
+            <b>select name,status from student cross join attendence on student.roll=attendence.roll;</b>
+            <br><br><br><img src="../MYSQL/screenshot/cross.png" alt="">
+    </body>
+</html>

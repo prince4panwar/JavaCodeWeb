@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Attributes in DBMS
+        </h1>
+        <p>In a database management system (DBMS), an attribute is a piece of data that describes an entity.</p>
+        <p>For example, in a customer database, the attributes might be name, address, and phone number. In a product database, the attributes might be name, price, and date of manufacture.</p>
+        <br><b>Types of Attributes
+        </b>
+       <br> <img src="../images/ATYp.png" alt="">
+        <br><br><br><b>1. Simple Attributes
+        </b>
+        <p>Simple attributes are those that cannot be further divided into sub-attributes.
+        </p>
+        <p>For example, A student's roll number of a student or the employee identification number. These attributes are usually assigned by an organization and are used to identify an individual within that organization uniquely. Databases and other systems often use simple attributes to track and manage information.
+        </p>
+        <br><img src="../images/simple1.png" alt="">
+        <br><br><br><b>2. Composite Attributes 
+        </b>
+        <p>Composite attributes are made up of two or more simple attributes.</p>
+        <p>For example, a person's address may be a composite attribute that is made up of the person's street address, city, state, and zip code. Composite attributes can be used to create more complex data models and can be helpful when trying to represent data in a concise way.</p>
+        <br><img src="../images/composite.png" alt="">
+        <br><br><br><b>3. Single Valued Attributes
+        </b>
+        <p>Single-valued attributes can only have one value. For example, a person's Social Security Number is a single-valued attribute. Social Security Numbers are used to uniquely identify individuals in the United States and are, therefore, single-valued attributes.
+        </p>
+        <p>Examples of single-valued attributes include employee numbers, customer numbers, and product codes. Single-valued attributes are typically used to provide a unique identifier for an entity and are often used in databases.
+        </p>
+        <br><img src="../images/single.png" alt="">
+        <br><br><br><b>4. Multivalued Attributes
+        </b>
+        <p>Multivalued attributes can have more than one value.</p>
+        <p>For example, a person may have multiple email addresses or phone numbers. Multivalued attributes in DBMS are often used to store information about relationships between entities. For instance, an employee entity might have a multivalued attribute called "dependents" that stores the names of the employee's dependents. Multivalued attributes can also be used to represent hierarchical data.</p>
+        <br><br><br><img src="../images/multivalue.png" alt="">
+        <br><br><br><b>5. Derived Attributes
+        </b>
+        <p>Derived attributes are based on other attributes and are not stored directly in the database.
+        </p>
+        <p>For example: Consider a database of employees. Each employee has a date of birth, and we might want to calculate their age. However, age is a derived attribute because it can be determined from the date of birth. As such, it would not make sense to store it directly in the database. Here is an example diagram of a derived attribute in DBMS:
+        </p>
+        <br><img src="../images/derived.png" alt="">
+        <br><br><br><b>6. Complex Attributes
+        </b>
+        <p>The complex attribute in DBMS involves both multivalued and composite attributes. </p>
+        <p>For example, someone might have more than one house, and each house might have more than one phone. The phone is then considered a complex attribute.</p>
+        <p>In the example above, the phone number is a composite attribute of the area code, exchange, and line number. Complex attributes are often used in database design to represent relationships between entities. Here is a complex attribute example explained in the form of a diagram.
+        </p>
+        <br><img src="../images/complex.png" alt="">
+        <br><br><br><b>7. Key Attributes
+        </b>
+        <p>DBMS's key attributes are used to uniquely identify each row in a table. Usually, there is more than one key attribute in a table (primary key and foreign key).
+        </p>
+        <p>For example: In a table of employees, the employee ID would be the primary key, while the manager ID would be the foreign key.
+        </p>
+       <br> <img src="../images/simple.png" alt="">
+
+    </body>
+</html>

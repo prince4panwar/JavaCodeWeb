@@ -1,0 +1,13 @@
+<html>
+<head>
+    </head>
+    <body>
+        <div style="background-color:red;height:200px;width: 200px;margin: 5px; margin:10px;margin-left: 82%;">
+        </div>
+        <div style="background-color: purple;height:200px;width: 200px ;margin:10px; margin-left: 60%;">
+        </div>
+        <div style="background-color: lightpink;height: 200px;width: 200px;margin: 10px;margin-left:38%;">
+        </div>
+    </body>
+
+</html>

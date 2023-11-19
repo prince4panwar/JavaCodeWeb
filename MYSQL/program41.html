@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL RIGHT JOIN
+        </h1>
+        <p>The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records (if any) from the left table (table1).
+        </p>
+        <br><br><br><img src="../images/right.png" alt="">
+        <h2>Syntax</h2>
+        <b>SELECT column_name(s)
+            FROM table1
+            RIGHT JOIN table2
+            ON table1.column_name = table2.column_name;</b>
+           <br><br><br> <img src="../MYSQL/screenshot/null.png" alt="">
+           <br><br><br><img src="../MYSQL/screenshot/inner.png" alt="">
+           <h2>Example</h2>
+           <b>select name,status from student right join attendence on student.roll=attendence.roll;</b>
+           <br><br><br><img src="../MYSQL/screenshot/right.png" alt="">
+    </body>
+</html>

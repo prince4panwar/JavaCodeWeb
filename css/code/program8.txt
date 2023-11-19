@@ -1,0 +1,17 @@
+<html>
+<head>
+    <style>
+    div{
+        display: inline-block;
+    }
+    </style
+    </head>
+    <body>
+        <div style="background-color:red;height:200px;width: 200px;margin:5px;">
+        </div>
+        <div style="background-color: purple;height:200px;width: 200px ;margin: 5px;">
+        </div>
+        <div style="background-color: lightpink;height: 200px;width: 200px;margin: 5px;"></div>
+    </body>
+
+</html>

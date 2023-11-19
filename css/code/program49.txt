@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+.bar{
+    font-size: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+.left{
+    padding-left: 5%;
+    align-items: center;
+}
+a{
+    padding: 8px;
+    color: rgb(163,163,163);
+}
+.right{
+    padding-left: 25%;
+}
+
+
+img{
+    width: 40px;
+    height: 40px;
+
+}   
+p{
+    font-size: 40px;
+    padding:5px;
+    
+} 
+a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+button{
+    margin: 2px;
+    padding: 8px 35px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+    </style>
+    </head>
+    <body>
+            <nav class="bar">
+                <div class="left">
+                    <img src="../images/bird.jpg" ><p>Poseiden</p>
+                </div>
+<div class="right">
+    <a href="#">HOME</a>
+    <a href="#">PRODUCT</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">CONTACT US</a>
+    <button>Buttons</button>
+</div>
+            </nav>
+    
+    
+    </body>
+</html>

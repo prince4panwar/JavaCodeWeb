@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL Loop
+        </h1>
+        <p>The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times. These are also known as iterative control statements.
+        </p>
+        <h2>Syntax for a basic loop:
+        </h2>
+        <b>LOOP  
+           <br> Sequence of statements;  
+       <br>   END LOOP;</b>
+        <br><br>  <h2>Types of PL/SQL Loops
+        </h2>
+        <p>There are 4 types of PL/SQL Loops.
+        </p>
+      <br><br>  <ul>
+            <li>Basic Loop / Exit Loop
+            </li>
+            <li>While Loop
+            </li>
+            <li>For Loop
+            </li>
+            <li>Cursor For Loop
+            </li>
+        </ul>
+        <br><br>
+        <h2>PL/SQL Exit Loop (Basic Loop)
+        </h2>
+        <p>PL/SQL exit loop is used when a set of statements is to be executed at least once before the termination of the loop. There must be an EXIT condition specified in the loop, otherwise the loop will get into an infinite number of iterations. After the occurrence of EXIT condition, the process exits the loop.
+        </p>
+        <h2>Syntax </h2>
+        <b>LOOP   
+          <br>  statements;   
+          <br>  EXIT;   
+          <br>  {or EXIT WHEN condition;}  
+       <br>  END LOOP;</b>
+         <h2>Example</h2>
+         <b>DECLARE  
+          <br>  i NUMBER := 1;  
+        <br>    BEGIN  
+         <br>   LOOP  
+         <br>   EXIT WHEN i>10;  
+          <br>  DBMS_OUTPUT.PUT_LINE(i);  
+          <br>  i := i+1;  
+         <br>   END LOOP;  
+          <br>  END; </b>
+            <br><br><br><img src="../PLSQL/screenshot/exit.png" alt="">
+
+    </body>
+</html>

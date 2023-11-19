@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>PL/SQL GOTO Statement
+        </h1>
+        <p>In PL/SQL, GOTO statement makes you able to get an unconditional jump from the GOTO to a specific executable statement label in the same subprogram of the PL/SQL block.
+        </p>
+        <p>Here the label declaration which contains the label_name encapsulated within the << >> symbol and must be followed by at least one statement to execute.
+
+        </p>
+        <h2>Syntax</h2>
+        <b>GOTO label_name;  
+          <br>  ..  
+        <br>   ..  
+        <br>   <<label_name>>  
+         <br>  Statement;  
+           </b>
+           <h2>Example</h2>
+           <b>begin
+          <br>  dbms_output.put_line('This is the first line.');
+          <br>  goto four;
+          <br>  dbms_output.put_line('This is the second line.');
+          <br>  dbms_output.put_line('This is the third line.');
+          <br>  <<four>>
+          <br>  dbms_output.put_line('This is the fourth line.');
+         <br>   end;
+         <br>   /</b>
+            <br><br><br><img src="../PLSQL/screenshot/goto.png" alt="">
+    </body>
+</html>

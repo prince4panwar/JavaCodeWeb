@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL LEFT JOIN 
+
+        </h1>
+        <p>
+            The LEFT JOIN keyword returns all records from the left table (table1), and the matching records (if any) from the right table (table2).
+        </p>
+        <br><br><br><img src="../images/left.png" alt="">
+        <h2> Syntax</h2>
+        <b>SELECT column_name(s)
+            FROM table1
+            LEFT JOIN table2
+            ON table1.column_name = table2.column_name;</b>
+            <br><br><br><img src="../MYSQL/screenshot/null.png" alt="">
+            <br><br><br><img src="../MYSQL/screenshot/inner.png" alt="">
+            <h2>Example</h2>
+            <b>select name,status from student left join attendence on student.roll=attendence.roll;</b>
+          <br><br><br>  <img src="../MYSQL/screenshot/left1.png" alt="">
+        
+    </body>
+</html>

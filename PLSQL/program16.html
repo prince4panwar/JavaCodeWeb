@@ -1,0 +1,125 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>PL/SQL Exception Handling
+        </h1>
+        <p>An exception is an error which disrupts the normal flow of program instructions. PL/SQL provides us the exception block which raises the exception thus helping the programmer to find out the fault and resolve it.
+        </p>
+        <h2>There are two types of exceptions defined in PL/SQL
+        </h2>
+        <ul>
+            <li>User defined exception.
+            </li>
+            <li>System defined exceptions.
+            </li>
+        </ul>
+        <h2>Syntax</h2>
+       <br> <b>DECLARE  
+      <br>      declarations section;
+      <br>   BEGIN  
+       <br>     executable command(s);
+
+  
+       <br>  EXCEPTION  
+           <br>WHEN exception1 THEN
+ 
+        <br>    WHEN exception1 THEN   
+             <br>   exception1-handling-statements   
+           <br> WHEN exception2  THEN   
+             <br>  exception2-handling-statements   
+         <br>   WHEN exception3 THEN   
+         <br>      exception3-handling-statements  
+         <br>   ........  
+         <br>   WHEN others THEN  
+            <br>   exception3-handling-statements  
+       <br>  END;  
+        </b>
+       <br> <h2>Table emp:-</h2>
+        <br><br><br><img src="../PLSQL/screenshot/exception.png" alt="">
+     <br>   <br><p><b>1.NO_DATA_FOUND: </b>It is raised WHEN a SELECT INTO statement returns no rows. For eg:
+        </p>
+      <br>  <h2>Example</h2>
+        <b>
+        <br>    DECLARE
+  <br> temp varchar(20);
+  
+ <br>   BEGIN
+ <br>  SELECT id into temp from emp where name='palak';
+  
+<br>  exception
+ <br>  WHEN no_data_found THEN
+   <br>   dbms_output.put_line('ERROR');
+   <br>   dbms_output.put_line('there is no name as');
+ <br>     dbms_output.put_line('palak in geeks table');
+<br> end;  
+</b>
+<br><br><b>2.TOO_MANY_ROWS:</b>It is raised WHEN a SELECT INTO statement returns more than one row.
+</p>
+<h2>Example</h2>
+ <br> <b>DECLARE
+ <br>   temp varchar(20);
+   
+ <br>  BEGIN
+ <br>   SELECT name into temp from emp;
+   <br> dbms_output.put_line(temp);
+   
+ <br> EXCEPTION
+ <br>   WHEN too_many_rows THEN
+   <br>    dbms_output.put_line('error trying to SELECT too many rows');
+   
+  <br> end;
+ </b>
+ <br><br><br><img src="../PLSQL/screenshot/toomanyexception.png" alt="">
+ <br><br><p><b>3.VALUE_ERROR:</b>This error is raised WHEN a statement is executed that resulted in an arithmetic, numeric, string, conversion, or constraint error. This error mainly results from programmer error or invalid data input.
+</p>
+<h2>Example</h2>
+<br><b>DECLARE
+  <br>  temp number;   
+   
+<br> BEGIN
+  <br>  SELECT name  into temp from emp where name='Raju';
+  <br>  dbms_output.put_line('the name is '||temp);
+   
+ <br>  EXCEPTION
+ <br>   WHEN value_error THEN
+ <br>   dbms_output.put_line('Error');
+ <br>   dbms_output.put_line('Change data type of temp to varchar(10)');
+   
+<br> END;</b>
+ <br><br><br><img src="../PLSQL/screenshot/valuerrorexception.png" alt="">
+  <br><br><p><b>4.ZERO_DIVIDE</b> = raises exception WHEN dividing with zero.
+</p>
+<h2>Example</h2>
+  <br> <b>DECLARE
+  <br>  a int:=11;
+  <br>  b int:=0;
+  <br>  ans int;
+   
+ <br> BEGIN
+  <br>  ans:=a/b;
+  <br>  dbms_output.put_line('the result after division is'||ans);
+   
+  <br> exception
+   <br> WHEN zero_divide THEN
+    <br>   dbms_output.put_line('dividing by zero please check the values again');
+    <br>   dbms_output.put_line('the value of a is '||a);
+    <br>   dbms_output.put_line('the value of b is '||b);
+<br> END;</b>
+ <br><br><br><img src="../PLSQL/screenshot/dividezeroexception.png" alt="">
+ <h2>PL/SQL User-defined Exceptions
+</h2>
+  <br><p>This type of users can create their own exceptions according to the need and to raise these exceptions explicitly raise command is used.
+</p>
+<h2>Syntax</h2>
+<br><b>DECLARE  
+<br> my-exception EXCEPTION;   </b>
+  <br>  <h2>PL/SQL Pre-defined Exceptions
+    </h2>
+    <p>There are many pre-defined exception in PL/SQL which are executed when any database rule is violated by the programs.
+    </p>
+    <p><b>For example:</b> NO_DATA_FOUND is a pre-defined exception which is raised when a SELECT INTO statement returns no rows.
+    </p>
+    <br><br><br><img src="../PLSQL/screenshot/predefined.webp" alt="">
+    </body>
+</html>

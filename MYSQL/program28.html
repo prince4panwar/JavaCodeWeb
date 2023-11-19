@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>MySQL GROUP BY Clause
+        </h1>
+        <p>The MYSQL GROUP BY Clause is used to collect data from multiple records and group the result by one or more column. It is generally used in a SELECT statement.
+
+        </p>
+        <p>You can also use some aggregate functions like COUNT, SUM, MIN, MAX, AVG etc. on the grouped column.
+
+        </p>
+        <h2>Syntax</h2>
+        <b>SELECT column_name(s)
+            FROM table_name
+            WHERE condition
+            GROUP BY column_name(s)
+            ORDER BY column_name(s);
+
+            </b>
+            <h2>Example</h2>
+            <b>SELECT marks, COUNT(*)
+                FROM student
+                GROUP BY marks;</b>
+                <br><br><br><img src="../MYSQL/screenshot/group.png" alt="">
+    </body>
+</html>
